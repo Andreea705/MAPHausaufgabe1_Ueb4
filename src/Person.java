@@ -15,8 +15,5 @@ public class Person {
         return budget;
     }
 
-    public void setBudget(int budget) {
-        this.budget = budget;
-    }
 
 }
