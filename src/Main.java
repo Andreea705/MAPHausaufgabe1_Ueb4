@@ -8,5 +8,7 @@ void main() {
 
     System.out.println("Billigste Tastatur: ");
     System.out.println(elektronikShop.finde_billigste_tastatur(tastaturen));
+    System.out.println("Teuerster Gegenstand:");
+    System.out.println(elektronikShop.finde_teuersten_gegenstand(tastaturen, usbLaufwerke));
 
 }

@@ -10,6 +10,25 @@ public class ElektronikShop  {
         return billigste;
     }
 
+    public static int finde_teuerste(int[] preise) {
+        int teuerste = preise[0];
+
+        for (int i = 1; i < preise.length; i++) {
+            if (preise[i] > teuerste) {
+                teuerste = preise[i];
+            }
+        }
+        return teuerste;
+    }
+
+    public static int finde_teuersten_gegenstand(int[] tastaturen, int[] usbLaufwerke) {
+        int teuersteTastatur = finde_teuerste(tastaturen);
+        int teuerstesUsb = finde_teuerste(usbLaufwerke);
+        return Math.max(teuersteTastatur, teuerstesUsb);
+    }
+
+
+
 
 
 }
